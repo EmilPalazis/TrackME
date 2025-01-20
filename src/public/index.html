@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html data-page="index" lang="en-RO">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>TrackME</title>
+</head>
+
+
+<body>
+        <h1 id="displayName"></h1>
+
+        <div style="overflow:auto">
+
+        <div class="container"> 
+
+            <div class="sidebar-left">
+                <button class="style-button" onclick="addDetailedExpense()">Add Detailed Expense</button>
+                <button class="style-button" onclick="addIncome()">Add income</button>
+                <button class="style-button" onclick="editExpenses()">Edit</button>
+                <button class="style-button">View Stats!</button>
+                <button class="style-button" onclick="deleteExpense()">Delete</button>
+                <button class="style-button" onclick="logoutFunction()" >Logout</button>
+            </div>
+            
+
+            <div class="main-content">      
+                
+                <div class="input-row">
+                    <input class="style-input" type="text" id="name-input" placeholder="Enter expense">
+                    <input class="style-input" type="text" id="price-input" placeholder="Enter price">
+                    <input class="style-input" type="text" id="category-input" placeholder="Enter category">
+                
+                    <button class="style-add-but" onclick="addExpense()">Add Expense</button>\
+                </div>
+                
+                <ul class="expense-list" id="expense-ArrayList"> </ul>
+                
+            </div>
+            
+            
+        
+            <div class="sidebar-right">
+                You have spent more money for: <br><br>  
+                <span id="item-name"></span> <br><br>
+                Your balance is: <br><br>  
+                <span id="balance"></span> <br><br>
+                Your expenses are: <br><br>  
+                <span id="expenses"></span> <br><br>
+                Your latest income was from: <br><br>  
+                <span id="latest-income"> - </span>
+            </div>
+        
+        
+           <div class="profile">
+                <button class="profile-button"></button>
+                <div class="profile-menu">
+                    <button>View Profile</button>
+                    <button>Settings!</button>
+                    <button onclick="logoutFunction()">Logout</button>
+                </div>
+
+           </div>
+        
+            
+        
+
+       
+        </div>
+
+
+        <script src="script.js"></script>   
+</body>
+
+
+</html>
